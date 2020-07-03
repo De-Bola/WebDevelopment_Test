@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 2</title>
+        <script type="text/javascript">
+        function displayInput()
+        {
+            var inputText = document.getElementById("input").value;
+            if (inputText.length == 0)
+            {
+                document.getElementById("prom").innerHTML="Please enter some values !";
+            }
+            else
+            {
+                document.getElementById("prom").innerHTML=inputText;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p>JavaScript Leasson 2</p>
+        <button onclick="displayInput()">Color Text</button>
+        <input id="input" type="text">
+        <p id="prom" style="color: blue;"></p>
+        
+    </body>
+</html> 

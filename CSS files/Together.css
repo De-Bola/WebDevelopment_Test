@@ -1,0 +1,57 @@
+body
+{
+    background-color: lightblue;
+}
+
+#para1
+{
+    color: blue;
+    font-size: 120%;
+}
+
+#output
+{
+    color: green;
+    font-size: 100%;
+}
+
+img
+{
+    float: left;
+    width: 20%;
+    height: 30%;
+}
+
+#para
+{
+    clear: left;
+    color: blue;
+    font-size: 150%;
+}
+
+#regular
+{
+    font-size: 75%;
+    color: blue;
+}
+
+#Classtest
+{
+    color: red;
+    font-size: 170%;
+}
+
+table
+{
+    border: solid;
+    width: 50%;
+}
+th
+{
+    border: dashed;
+}
+
+td
+{
+    border: solid;
+}

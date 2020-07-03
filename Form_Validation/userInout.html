@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--This is a program for user form. 
+    It would take some input from the user and then send
+    it to the server once the user clicks submit-->
+<html>
+    <head>
+        <title>HTML Form</title>
+        <link rel="stylesheet" type="text/css" href="..//Form_Validation/CSS files/form.css">
+    </head>
+    <body>
+        <form>
+            <p>This is an HTML form validation input</p>
+            First Name:<input type="text" name = "first_name" required title="Your first name"/>
+            <br>
+            Last Name:<input type="text" name="last_name" required title="Your last name" />
+            <br>
+            Password :<input type="text" name="user_password" title="Your Password"/><br>
+    
+            <p>Please check boxes matching your competencies.</p>
+            <!--Radio buttons for the competencies-->
+            <input type="radio" name="competencies" value="HTML">HTML <br>
+            <input type="radio" name="competencies" value="CSS">CSSs <br>
+            <input type="radio" name="competencies" value="JavaScript">JavaScript><br>
+            <input type="radio" name="competencies" value="Java">Java <br>
+    
+            <p>Please select below your availability</p>
+            <!--Check boxes for avalability-->
+            <input type="checkbox" name="available" value="available"/>Available <br>
+            <input type="checkbox" name="available" value="not_available"/> Not Available <br>
+    
+            Order quantity: <input type="number" name="quantity" min="1" max="5" required><br>
+
+            Birthday: <input type="date" name="birthday" value="birthday" /><br>
+
+            Color: <input type="color" name="color" value="color"> <br>
+
+            <!--submit button-->
+            <input type="submit" title="Submit Form"/>
+        </form>
+    </body>
+</html>

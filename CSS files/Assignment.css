@@ -1,0 +1,49 @@
+body
+{
+    background-color:lightgoldenrodyellow;
+}
+
+#intro
+{
+    color: blue;
+    font-size: 190%;
+}
+
+#distro.end
+{
+    font-size: 120%;
+
+}
+
+table
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+/* 
+damilre
+Da
+*/
+
+td,th
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #dddddd;
+}
+
+#ending
+{
+    font-size: 120%;
+}
+img
+{
+    float: left;
+    width: 190px;
+}

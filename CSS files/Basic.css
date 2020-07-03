@@ -1,0 +1,16 @@
+body
+{
+    background-color:lightcyan;
+}
+
+h1
+{
+    color: blue;
+    margin-left: 20px;
+}
+
+.testClass
+{
+    color: rebeccapurple;
+    font-size: 300%;
+}

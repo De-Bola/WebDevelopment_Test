@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--An HTML Program for JavaScripts event-->
+<html>
+    <head>
+        <title>JScript Event</title>
+        <script>
+            function mathInput()
+            {
+                var userNumber = document.getElementById("mathInput").value;
+                alert("Your number * 5 is = " + userNumber * 5);
+            }
+        </script>
+    </head>
+    <body>
+        <p style="font: italic; color: blue;">This is an example of JavaScript Event</p>
+        <button onclick="alert('The Test works');">Click Me</button>
+        <input type="number" id="mathInput">
+        <button onclick="mathInput()">Multiply</button>
+    </body>
+</html>

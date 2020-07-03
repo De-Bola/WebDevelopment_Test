@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Basics</title>
+
+        <!-- Link to the external CSS files-->
+        <link rel="stylesheet" type="text/css" href="..//HTML Tutorial/CSS files/Basic.css">
+
+        <!--This is the Script / JavaScript section-->
+        <script>
+            function doMath()
+            {
+                var math = document.getElementById("mathInput").value;
+                alert('You number x 5 is : ' + math * 5);
+            }
+        </script>
+
+        <style>
+            p.regular{color: red;}
+            p.medium{color: rgb(red, green, blue);}
+        </style>
+
+    </head>
+    <body>
+        <p class="medium"> JavaScript Testing. </p>
+        <button onclick="doMath()">Calculate</button>
+        <input id="mathInput" type="number">
+        <p style="color: coral;">Computation Completed! </p>
+        <p class="testClass">End of program</p>
+    </body>
+</html>

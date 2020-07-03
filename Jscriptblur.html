@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blur Event</title>
+        <script>
+            function checkField1()
+            {
+                var field = document.getElementById("field1").value;
+                if (field.length < 5)
+                {
+                    document.getElementById("message1").innerHTML="Too short!"
+                }
+                else
+                {
+                    document.getElementById("message1").innerHTML="Lenght okay!"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p style="font: italic; color: blue;">This is a JavaScript function named on-Blur and can be used in <br>
+            form validation and many more as it react immeidately based on the users input. Example below<br>
+        </p>
+        <input id="field1" type="text" onblur="checkField1();"> <span id="message1"></span>
+        <input type="text" id="field2">
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Function</title>
+        <script>    
+        function doMath()       
+            {
+                var x= 10;
+                var y= 20;
+                var z= 4;
+                var answer = x * y / z;
+
+                document.getElementById("math").innerHTML="Answer is equal: " + answer;
+            }
+        </script>
+    </head>
+    <body>
+        <p>This is a sample JavaScript Math function</p> <br>
+        <p id="math" style="font-size: 120%; color: blue;"></p>
+        <button style="background: coral; font-style: italic;" onclick="doMath()">Calculate</button>
+    </body>
+</html>

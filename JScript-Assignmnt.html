@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Damilare - Assignment</title>
+        <script>
+            function nicetoMeetYou()
+            {
+                var userName = document.getElementById("name").value;
+                if(userName == "")
+                {
+                    alert('Please enter your name dear friend!');
+                }
+                else
+                {
+                    alert('Nice to meet you ' + userName);
+                }
+                
+            }
+        </script>
+    </head>
+    <body onload="alert('Nice to meet you')">
+        <p style="font: italic; color: blue;">This is my JavaScript assignment. Thank you for the review</p>
+        <p>Please enter your name in the input field below.</p>
+    <button onclick ="nicetoMeetYou()">Add Friend</button>
+    <input id="name" type="text"> 
+    <p id="name"></p>
+    </body>
+    </html>
