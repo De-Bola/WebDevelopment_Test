@@ -9,3 +9,8 @@ p
 {
     font: italic;
 }
+
+.sub
+{
+    font: italic bold;
+}

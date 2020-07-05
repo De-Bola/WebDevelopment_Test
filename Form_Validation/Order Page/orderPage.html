@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--An order now page sample-->
+<html>
+    <head lang="US-eng">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="..//Order Page/orderPage.CSS">
+        <script type="text/javascript" src="..//Order Page/orderPage.js"></script>
+        <title>Order Now</title>
+    </head>
+<!--Body of the page-->
+    <body>
+        <form action="#">
+            <div id="fullpage">
+            <h1>Submit an order: </h1>
+            <table border="0">
+                <tr> <!--First name row-->
+                    <td class="label_col">First Name: </td>
+                    <td class="input_col"><input type="text" name="firstName" id="firstName" onblur="checkfiled1();">
+                    </td>
+                    <td class="feedback_col"><span id="firstNamePrompt">Common name</span></td>
+                </tr>
+
+                <tr> <!--Last name row-->
+                    <td class="label_col">Last Name: </td>
+                    <td class="input_col"><input type="text" name="lastName" id="lastName" onblur="checkfield2();">
+                    <td class="feedback_col"><span id="lastNamePrompt">Family code</span></td>
+                </tr>
+
+                <tr> <!--Phone number row-->
+                    <td class="label_col">Phone Number: </td>
+                    <td class="input_col"><input type="text" name="Phone Number" id="phoneNumber" onblur="checkfield3();"
+                        placeholder="xxx-xxx-xxxx">
+                    </td>
+                    <td class="feedback_col"><span id="pnoneNumberPrompt">XXX-XXX-XXXX</span></td>
+                </tr>
+
+                <tr> <!--Quantity row-->
+                    <td class="label_col">Order Quantity: </td>
+                    <td class="input_col"><input type="number" name="quantity" id="quantity" placeholder="1"></td>
+                    <td class="feedback_col"><span id="quantityPromt">Number of product you want</span></td>
+                </tr>
+
+                <tr> <!--Price row-->
+                    <td class="label_col">Item Price: </td>
+                    <td class="input_col"><input type="text" name="item_Price" id="Price" value="10.00" readonly></td>
+                    <td class="feedback_col"><span id="price">USD</span></td>
+                </tr>
+               
+                <tr> <!--Button Row-->
+                    <td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="calcOrder();">Order Now</span></td>
+                </tr>
+            </table>
+
+            <span id="orderConfirm">&nbsp;</span>
+        </div>
+
+        </form>
+    </body>
+</html>

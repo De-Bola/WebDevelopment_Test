@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="..//Form_Validation/CSS files/form.css">
+<!--JavaScripts -->
+        <script type="text/javascript">
+        //Function 1 checking / validating field 1
+        function checkField1()
+        {
+        }
+
+        //Function 2 checking / vlaidating field 2
+        function checkFiled2()
+        {
+        }
+
+        //function 3 checking / vlaidating field 3
+        function checkFiled3()
+        {
+            var field = document.getElementById("field3").value;
+            var regx = /^[A-Za-z]{3}$/;
+            if(regx.test(field)) //check if the user value is within the pattern specified
+            {
+                // alert('thank you input accepted!');
+                document.getElementById("message3").innerHTML = "Thank you. Input accepted";
+            }
+            else
+            {
+                // alert('Incorrect value, please enter a 3 letter country code!');
+                document.getElementById("message3").innerHTML = "Please enter a 3 letter country code";
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p>JavaScript onblur event test</p>
+        <form>
+<!--Validating with JavaScript, one of the best  form of validation-->
+            Field 1: <input id="field1" type="text" name="First_name" onblur="checkField1();" title="Your first name"><span id="message1"></span><br>
+            Field 2: <input id="field2" type="text" name="Last_name" onblur="checkFiled2();" title="Your last name"><span id="message2"></span><br>
+            Country Code JS: <input id="field3" type="text" name="country_code" onblur="checkFiled3();" title="JS_country Code"><span id="message3"></span><br>
+
+<!--Validating with HTML5, not really a robust validation type-->
+            Countr Code HTML5: <input type="text" name="HTML5_country code" pattern="[A-Za-z]{3}" required
+            title="3 letter country code"><br>
+
+<!--Form submission button-->
+            <input id="sub" type="submit">
+        </form>
+    </body>
+</html>
