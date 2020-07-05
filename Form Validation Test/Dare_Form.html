@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head lang="US-eng">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="..//Form Validation Test/Damilare_form.css">
+        <title>Damilare Form</title>
+        <script type="text/javascript" src="..//Form Validation Test/Damilare_form.js"></script>
+    </head>
+    <form action="#">
+        <div id="fullpage">
+            <img src="https://astanatimes.com/wp-content/uploads/2018/04/e-visa.jpg" alt="visa_logo">
+            <h2>Country Visa Application Form. Please fill the form correctly and submit once completed!</h2>
+            <!--Table-->
+            <table border="0" >
+                <tr> <!--Given names-->
+                    <td class="info_col">Given name(s): </td>
+                    <td class="data_col"><input type="text" name="given_Names" id="givenNames" onblur="givenNames1();"></td>
+                    <td class="prompt_col"><span id="givennamePrompt">First name / Middle name</span></td>
+                </tr>
+
+                <tr> <!--Surname-->
+                    <td class="info_col">Surname: </td>
+                    <td class="data_col"><input type="text" name="surname" id="surnames" onblur="surName();"></td>
+                    <td class="prompt_col"><span id="surname">Family name</span></td>
+                </tr>
+
+                <tr> <!--Date of birth-->
+                    <td class="info_col">Date of birth: </td>
+                    <td class="data_col"><input type="date" name="dob" id="dateBirth"></td>
+                    <td class="prompt_col"><span id="date_birth">Day you were born</span></td>
+                </tr>
+
+                <tr> <!--Country of birth-->
+                    <td class="info_col">Country of Birth: </td>
+                    <td class="data_col"><input type="text" name="countryOfBirth" id="Country1" onblur="checkCountry();"></td>
+                    <td class="prompt_col"><span id="brth">Country</span></td>
+                </tr>
+
+                <tr> <!--City you were born-->
+                    <td class="info_col">City of birth: </td>
+                    <td class="data_col"><input type="text" name="cityOfBirth" id="cityBirth" onblur="checkCity();"></td>
+                    <td class="prompt_col"><span id="city">City you were born in</span></td>
+                </tr>
+
+                <tr> <!--Gender-->
+                    <td class="info_col">Gender: </td>
+                    <td class="data_col"><input type="checkbox" name="Male" id="male"><label for="Male">Male</label> <input type="checkbox" name="Female" 
+                    id="female"><label for="Female">Female</label></td>
+                    <td class="prompt_col"><span id="gender">Your Gender / Sex</span></td>
+                </tr>
+
+                <tr> <!--Submit Application button-->
+                    <td class="Button" id="button" colspan="3"><span class="buttonBG" onclick="submit_Application();">Submit Application</span></td>
+                </tr>
+
+            </table>
+            <span id="Application">&nbsp;</span>
+        </div>
+    </form>
+</html>
