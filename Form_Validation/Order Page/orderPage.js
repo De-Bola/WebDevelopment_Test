@@ -1,7 +1,7 @@
 function checkfiled1()
 { // test input for 2-15 allowed characters
     var field = document.getElementById("firstName").value;
-    var regx1 = /^[A-Za-z\s\'\-]{2,15}$/;
+    var regx1 = /^[A-Za-z\s\'\-]{2,15}$/; // checks the user input (2 is the min and 15 is the max)
     if(regx1.test(field))
     {
         document.getElementById("firstNamePrompt").innerHTML="Accepted"
