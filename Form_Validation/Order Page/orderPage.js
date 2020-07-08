@@ -66,6 +66,22 @@ function checkfield3()
 //         document.getElementById("quantityPromt").style.color= "red"
 //     }
 // }
+function DisplayInfo()
+{
+    var str = '';
+    var elem = document.getElementById('widgetForm').elements;
+    for(var i = 0; i < elem; i++)
+    {
+        str += "<b>Type: </b>" + elem[i].type + "&nbsp&nbsp";
+        str += "<b>Name: </b>" + elem[i].name + "&nbsp&nbsp";
+        str += "<b>Value: </b><i>" + elem[i].value + "</i>&nbsp&nbsp";
+        str += "<br>";
+    }
+    document.getElementById('formElements').innerHTML = str;
+}
+
+
+
 
 function calcOrder()
 {
