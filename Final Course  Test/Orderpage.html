@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order page</title>
+        <link rel="stylesheet" type="text/css" href="..//Final Course  Test/orderpage.css">
+        <script src="..//Final Course  Test/orderpage.js"></script>
+    </head>
+    <body>
+        <img src="https://www.qsrmagazine.com/sites/default/files/phut_0.jpg" 
+        alt="Damilare's Pizza corner"><br>
+        
+        <p> <h2>Thank you for visiting our online page. Due to the covid 19 restrictions,
+            we are moving our <br> activities to the online service platform. Please bare with us 
+            as we get the web page to suit your <br> comfortablity. <br>
+            <br>
+            We are dedicated to serving you some of the best meals and dishes.</h2>
+            <h3>Please complete your order:</h3>
+            <div>
+                <form action="orderpageSuccessful.html" onsubmit="">
+                   <h4>Name:</h4><br>
+                    <input type="text" name="cName" id="customer_name" onblur="valid_fname();" placeholder="Your Full name">
+                    <span id="info1"></span> <br>
+
+                   <h4>Address:</h4><br>
+                    <input type="text" name="caddress" onblur="valid_address();" id="customer_address" placeholder="House number - Street">
+                    <span id="info2"></span>
+
+                    <h4>Card: <select name="cardtype" id="card_type">
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">Mastercard</option>
+                        <option value="PayPal">Paypal</option>
+                        <option value="Sofort">Sofort</option>
+                    </select> <input type="text" name="cardnumbers" id="customer_card" placeholder="xxx-xxx-xxxxx"></h4><br>
+
+                    <h4>Portion Size: </h4> <input class="poertionsize" type="radio" name="small" id="customerStomach"><label for="small">small</label>
+                    <input class="poertionsize" type="radio" name="Large" id="customerStomach"><label for="Large">Large</label>
+                    <input class="poertionsize" type="radio" name="whopper" id="customerStomach"><label for="whopper">whooper</label><br>
+
+                    <h4>Extras: </h4> <input type="checkbox" name="Onions" id="customer_extras"><label for="Onions">Onions</label>
+                    <input type="checkbox" name="Beef" id="customer_extras"><label for="Beef">Beefs</label>
+                    <input type="checkbox" name="Onions" id="customer_extras"><label for="Onions">Onions</label>
+
+                    <h4>Comments: <input type="text" name="usercomments" id="Comments"> </h4>
+
+                    <input type="submit" value="Submit Order">
+                </form>
+            </div>
+        
+        </p>
+
+        
+    </body>
+</html>
