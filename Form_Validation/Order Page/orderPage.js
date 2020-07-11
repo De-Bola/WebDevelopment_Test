@@ -70,7 +70,7 @@ function DisplayInfo()
 {
     var str = '';
     var elem = document.getElementById('widgetForm').elements;
-    for(var i = 0; i < elem; i++)
+    for(var i = 0; i < elem.length; i++)
     {
         str += "<b>Type: </b>" + elem[i].type + "&nbsp&nbsp";
         str += "<b>Name: </b>" + elem[i].name + "&nbsp&nbsp";

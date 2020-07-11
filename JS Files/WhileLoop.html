@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Loops</title>
+        <style type="text/css">
+        table
+        {
+            border: 0;
+        }
+        td
+        {
+            font: italic;
+        }
+        tr
+        {
+            font: italic;
+        }
+        p
+        {
+            font-size: 20px;
+        }
+        span
+        {
+            font-size: medium;
+            color: lightgray;
+        }
+        </style>
+        <script type="text/javascript">
+        function checkFullname()
+        {
+            var name = document.getElementById("cFullName").value;
+            if(name == "")
+            {
+                document.getElementById("error_name").innerHTML = "Please enter your full name!"
+            }
+            else
+            {
+                var i = 0;
+                while (i < name.length)
+                {
+                    document.getElementById("error_name").innerHTML += name[i] + i++;
+                }
+            }
+        }
+
+        function checkPhoneNumber()
+        {
+            var phone = document.getElementById("cAddress").value;
+            if(phone == "")
+            {
+                document.getElementById("error_address").innerHTML = "Please enter a valid address !";
+            }
+            else
+            {
+                var i = 0;
+                do{
+                    phone += "Phone number is: " + i + i++;
+                }
+                while(i < phone.lenngth);
+            }
+        }
+
+        function checkfield1()
+        {
+            var name = document.getElementById("cFullName").value;
+            var regx = /^[A-Za-z\s\'\-]{2,15}$/; // checks the user input (2 is the min and 15 is the max)
+            if (regx.test(name))
+            {
+                document.getElementById("name_prompt").innerHTML ="Accepted";
+                document.getElementById("name_prompt").style.color = 'green';
+                return true;
+            }
+            else
+            {
+                document.getElementById("name_prompt").innerHTML = "Enter at least 2 min characters !";
+                document.getElementById("name_prompt").style.color = "red";
+                return false;
+            }
+        }
+
+        function checkfield2()
+        {
+            var name = document.getElementById("cFullName").value;
+            var regx = /^[A-Za-z\s\'\-]{2,15}$/; // checks the user input (2 is the min and 15 is the max)
+            if (regx.test(name))
+            {
+                document.getElementById("address_propmt").innerHTML ="Accepted";
+                document.getElementById("address_propmt").style.color = 'green';
+                return true;
+            }
+            else
+            {
+                document.getElementById("address_propmt").innerHTML = "Enter at least 2 min characters !";
+                document.getElementById("address_propmt").style.color = "red";
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p>This are diffrent types of JS looping functions.</p>
+        <ul>
+            <li>while loop</li>
+            <li>do while Loop</li>
+            <li>for loop</li>
+            <li>for / in loop</li>
+            <li>for / of</li>
+        </ul>
+        <p>And below you would find example / possible use case of each type of loop</p>
+        <hr>
+        <div>
+            <p>This is an example of the <em>while Loop.</em>The loopd checks your input 
+                and print your entered value out.<br></p>
+            <table>
+                <tr>
+                    <p>Names</p>
+                    <td class="info_col">Full Name: </td>
+                    <td class="data_col"><input type="text" name="uFullName" id="cFullName" onblur="checkfield1()" placeholder="Your Name">
+                    <td class="prompt_col"><span id="name_prompt">*</span></td>
+                </tr>
+            </table>
+            <hr>
+
+            <p>This is an example for <em>JS do While Loop</em> 
+                This Loop is a varient of the while loop. I works by excuting the  block of code once
+                to check the condition. If the condition is satisfied flow of the program continues
+                to the next block of instruction and if the condition is false i.e the condition 
+                is not satisfied then the loops keeps iterating until the condition is satisfied.
+
+                <table>
+                    <tr>
+                        <td class="info_col">Address: </td>
+                        <td class="data_col"><input type="text" name="uAddress" id="cAddress" onblur="checkfield2()" placeholder="House ---">
+                        <td class="prompt_col"><span id="address_propmt">*</span></td>
+                    </tr>
+                </table>
+            </p>
+            
+        <hr>
+            <button onclick="checkFullname()">Print Name</button><span id="error_name"></span></td><br>
+             <button onclick="checkPhoneNumber()">Print Phone number</button> <span id="error_address"></span></td>
+            
+
+        </div>
+        
+    </body>
+</html>

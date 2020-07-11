@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <title>Course Form</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="..//Fianl Course Practice/form.css">
+        <script type="text/javascript" src="..//Fianl Course Practice/form.js"></script>
+    </head>
+    <body>
+        <div>
+            <form action="Submmision.html" onsubmit="return validateForm();">
+            <!--First name-->
+            First name: <br> 
+            <input type="text" name="firstname" id="vFirstname" onblur="vlaid_firstname();" placeholder="Your First name">
+            <span id="firstnameprompt"></span> <br>
+            <!--Last name-->
+            Last name: <br> 
+            <input type="text" name="lastname" id="vlasttname" onblur="vlaid_lastname();" placeholder="Your Family name">
+            <span id="lasttnameprompt"></span> <br>
+            <br>
+
+            Create your password: <br>
+            <input type="password" name="password1" id="passw1" onblur="vlaid_password1();" placeholder="Enter a password">
+            <span id="passward1"></span> <br>
+            <input type="password" name="password2" id="passw2" onblur="vlaid_password2();" placeholder="Enter password again">
+            <span id="paasward2"></span> <br>
+            <br>
+            Select your favourite food: <br>
+
+            <input type="radio" class="Foods" name="Pizza" value="Pizza" ><label for="Pizza">Pizza</label><br>
+            <input type="radio" class="Foods" name="Salad" value="Salad" ><label for="Salad">Veg Salad</label><br>
+            <input type="radio" class="Foods" name="Beef-Bowl" value="Beef-bowl" ><label for="Beef-Bowl">Beef-Bowl</label><br>
+            <input type="radio" class="Foods" name="Fried-Rice" value="Fried-Rice" ><label for="Fried-Rice">Fried-Rice</label><br>
+            <input type="radio" class="Foods" name="Ice-Cream" value="Ice-Cream" ><label for="Ice-Cream">Ice-Cream</label><br>
+
+            Please enter your birthday: <br>
+            <input type="date" name="birthday" id="vbirthday"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        <br>
+        <button>Click Me</button>
+    </body>
+</html>

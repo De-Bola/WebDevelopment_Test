@@ -1,0 +1,17 @@
+body
+{
+    background-color: lightcyan;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4%;
+    font-size: large;
+    font: bold;
+}
+input
+{
+    font-style: italic;
+}
+button
+{
+    font-size: large;
+    font: bold;
+}
